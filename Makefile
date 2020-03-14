@@ -26,7 +26,7 @@ $(PLUGIN_BINARY): $(SOURCES)
 	PATH=${PATH} golint ./cloudwatch
 	mkdir -p ./bin
 	go build -buildmode c-shared -o $(PLUGIN_BINARY) ./
-	@echo "Built Amazon CloudWatch Logs Fluent Bit Plugin"
+	@echo "Built Amazon CloudWatch Logs Fluent Bit Plugin(for release)"
 
 .PHONY: release
 release:
